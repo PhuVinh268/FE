@@ -1,0 +1,11 @@
+/* ID: dùng # */
+#first-heading {
+    color: red;
+    font-size: 30px;
+}
+
+/* Class: dùng . */
+.second-heading {
+    color: blue;
+    font-size: 15px;
+}

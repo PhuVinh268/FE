@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "Phần 0. Test"
+		},
+		{
+			"path": "Phần 1"
+		},
+		{
+			"path": "Phần 2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Phần 0. Test"
+	}
+}

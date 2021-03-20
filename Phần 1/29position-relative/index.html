@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position-Relative</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            html, body{
+                margin: 0;
+            }
+
+            h1{
+                position: relative;  /* Ghi đè lên, chỉ hoạt động khi có position */
+                top: 100px;
+                left: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Position</h1>
+        <ul>
+            <li>Relative</li>   <!--Tương đối-->
+            <li>Absolute</li>   <!--Tuyệt đối-->
+            <li>Fixed</li>      <!--Vị trí bám dính, phụ thuộc vào khung trình duyệt-->
+            <li>Sticky</li>     <!--Không khuyến cáo sử dụng, vì không đc nhiều trình duyệt hỗ trợ-->
+        </ul>
+    </body>
+</html>
+
+<!-- Bài này chỉ cách di chuyển thẻ tự do -->

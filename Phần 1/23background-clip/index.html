@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>background-clip</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            html, body{
+                margin: 0;
+            }
+
+            .header{
+                width: 100%;
+                height: 100px;
+                background-color: #333;
+                padding: 20px;
+                box-sizing: border-box;
+                border: 10px dashed #ccc;
+                
+                background-clip: content-box;  /* content-box: chỉ đổ màu #333 vào content */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header"></div>
+    </body>
+</html>
+
+<!--background-clip: border-box    : chỉ đồ từ border vào trong content-->
+<!--background-clip: padding-box   : chỉ đổ từ padding vào trong content-->

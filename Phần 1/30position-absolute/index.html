@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position-absolute</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            html, body{
+                margin: 0;
+            }  
+
+            li:nth-of-type(2) {  
+                color: violet;
+            }
+
+            .box {
+                width: 100%;
+                height: 120px;
+                background-color: #333;
+                position: relative;
+            }
+
+            .box-child {
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                position: absolute;     /* Lấy thẻ cha .box làm gốc toạ độ*/
+                bottom: 0;              /* sử dụng 1 trong 2 thẻ bottom hoặc top */
+                right: 0;               /* sử dụng 1 trong 2 thẻ right hoặc left */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="box-child"></div>
+        </div>
+
+        <h1>Position</h1>
+        <ul>
+            <li>Relative</li>   <!--Tương đối-->
+            <li>Absolute</li>   <!--Tuyệt đối-->
+            <li>Fixed</li>      <!--Vị trí bám dính, phụ thuộc vào khung trình duyệt-->
+            <li>Sticky</li>     <!--Không khuyến cáo sử dụng, vì không đc nhiều trình duyệt hỗ trợ-->
+        </ul>
+    </body>
+</html>
+
+<!--   li:nth-of-type(2): này mới   -->
+<!--   Coi thêm trong video bài giảng -->
+
+<!-- Bài này chỉ cách bám vào thẻ cha -->

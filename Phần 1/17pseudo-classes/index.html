@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lớp giả</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .box {
+                width: 100%;
+                height: 120px;
+                background: rgb(190, 124, 157);
+            }
+            /* ---------------- */
+            h1:hover {
+                color: blue;
+            }
+            .box:hover {
+                background-color: aqua;
+            }
+             /* --------------- */
+            p:active {
+                 color: green;
+            }
+            /* ---------------- */
+            li:first-child {
+                color: red;
+                font-style: oblique;
+            }
+            li:last-child {
+                color: purple;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+        <h1>CSS pseudo-classes</h1>
+        <p>Điền nội dung vào chỗ này</p>
+            <ul>
+                <li> :root </li>            <!--Bài 14-->
+                <li> :hover </li>           <!--Di chuyển chuột vào auto đổi màu--> 
+                <li> :active </li>          <!--Click chuột vào mới đổi màu-->
+                <li> :first-child </li>     <!--Ký tự đầu-->
+                <li> :last-child </li>      <!--Ký tự cuối-->
+            </ul>
+    </body>
+</html>

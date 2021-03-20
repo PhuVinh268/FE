@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Hàm trong CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .box {
+                width: calc(80%/2);
+                height: 120px;
+                background: rgb(31, 206, 45)
+            }
+            
+/* Tạo lớp giả trong attr() dùng để đưa đường link mà không cần thay đổi 2 lần trong thẻ <a>*/
+            a::after {
+                content: "(" attr(href) ")";
+            }
+
+/* Mở rộng về attr() */
+            .box::after {
+                content: attr(data-title);
+            }
+        </style>
+    </header>
+
+    <body>
+        
+        <div class="box"  data-title="Đây là box mở rộng"></div>  <!--còn "title" khác với "data-titlte" là di chuột vào hiện chú thích-->
+        
+        <a href="https://fullstack.edu.vn">Học lập trình</a>
+
+        <h1>CSS Functions</h1>
+        <ul>
+            <li>var()</li>      <!--Học trong bài 14-->
+            <li>linear-gardient()</li>
+            <li>rgba()</li>
+            <li>rgb</li>        <!-- Màu-->
+            <li>calc</li>       <!-- Calculator -->
+            <li>attr()</li>     <!-- Attribute -->
+        </ul>
+    </body>
+</html>

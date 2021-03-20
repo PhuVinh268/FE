@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>background-position</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            html, body{
+                margin: 0;
+            }
+
+            .box{
+                width: 100%;
+                height: 100vh;
+                background-image: url(https://vanhienblog.info/wp-content/uploads/2019/02/anh-gai-xinh-dep-hot-girl-1-00-600x445.jpg);
+                background-size: 200px;
+                background-repeat: no-repeat;
+/* Di chuyển hình ảnh right, left, bottom, top, ...px */
+                background-position: top 20px   right 20px;       /* Nếu chỉ viết top, thì auto hiểu center ko cần viết center*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

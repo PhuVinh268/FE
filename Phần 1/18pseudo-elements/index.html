@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phần tử giả</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .box {
+                width: 100%;
+                height: 120px;
+                background: rgb(0, 255, 55)
+            }
+            .box1 {
+                width: 50%;
+                height: 50px;
+                background-color: aqua;
+            }
+            /* --------------------------------- */
+            .box::before {
+                content: "";     /*giúp cái element giả tồn tại được, cho dù nó là một chuỗi rỗng*/
+                display: block;  /*Để cho nó có dạng khối*/
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+            .box::after {
+                content: "Xin chào";     /*giúp cái element giả tồn tại được, cho dù nó là một chuỗi rỗng*/
+                color: blue;
+                display: block;  /*Để cho nó có dạng khối*/
+                width: 50px;
+                height: 50px;
+                background-color: gray
+            }
+            /* --------------------------------- */
+            h1::first-letter{
+                font-size: 50px;
+                color: red;
+            }
+            h1::first-line{
+                color: bisque;
+            }
+            h1::selection{           /*Nếu bỏ h1 thì tất cả chữ sẽ bị ảnh hưởng*/
+                background-color: blueviolet;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box" title="123"></div>    <!--Mặc định nó đã có display: block rồi nên ta ko cần thêm vào đây-->
+        <div class="box1" data-title="456">Đây là box thứ hai</div>
+        <h1>CSS pseudo-elements <br /> Dòng thứ 2 </h1>   <!-- Dùng <br /> để xuống dòng-->
+        <ul>
+            <li> ::before      </li>        <!--Bài 16 có ví dụ mẫu-->
+            <li> ::after       </li>        <!-- '' -->
+            <li> :first-letter </li>        <!--Chữ cái đầu tiên của dòng 1-->
+            <li> ::first-line  </li>        <!--Có tác dụng với dòng 1-->
+            <li> ::selection   </li>        <!--Tô đen chỗ đó-->
+        </ul>
+    </body>
+</html>

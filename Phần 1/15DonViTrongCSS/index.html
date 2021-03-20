@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đơn vị trong CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        
+        <style>
+            
+            html {
+                font-size: 100%;  /* 100%=16px */
+            }
+
+            h1 {
+                font-size: 1rem;  /* Được định nghĩa theo font-size của html {} 1rem=16px */
+            }
+
+            .box  {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="box"></div>
+
+        <div>
+            <h1>CSS units</h1>
+            <h2>1. Absolute units ?</h2>   <!--Tuyệt đối-->
+            <ul>
+                <li>PX</li>     <!--không thay đổi, dù kéo trang web lớn nhỏ-->
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc</li>
+            </ul>
+            <h2>2. Relative units ?</h2>    <!--Tương đói-->
+            <ul>
+                <li>%</li>       <!--thay đổi theo khung của chrome-->
+                <li>rem</li>     <!--thay đổi thẻ <h1> dựa trên font-size của html {}, tất cả chữ đều to lên, phụ thuộc vào thẻ html-->
+                <li>em</li>      <!--thay đổi thẻ <h1> dựa trên font-size gần nhất-->
+                <li>vw</li>      <!--vw: width: chiều ngang trình duyệt, chỗ .box-->
+                <li>vh</li>      <!--Vh: height: chiều dọc trình duyệt, chỗ .box-->
+                <li>vmin</li>
+                <li>vmax</li>
+                <li>ex</li>
+                <li>ch</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+<!--
+    V: Viewport
+    vw: width: chiều ngang trình duyệt
+-->

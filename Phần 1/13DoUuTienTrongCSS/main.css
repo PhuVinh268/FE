@@ -1,0 +1,23 @@
+/* h1 {
+    color: red;
+    font-size: 30px;
+} */
+
+
+
+
+
+/* * {
+    color: red;
+} */
+
+li {
+    color: blue !important;   /*Có important là ưu tiên dòng đó*/
+}
+li {
+    color: green;
+}
+/* --------------------- */
+html {
+    color: yellow;     /* Ưu tiên màu thẻ <h1> */
+}

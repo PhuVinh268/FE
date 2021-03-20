@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Border (Lớp viền) </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .box{
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                display: flex;       /* flex: Dùng để căn giữa */
+                align-items: center;
+                justify-content: center;
+            }
+
+            .box1{
+                background-color: #333;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+            .box2{
+                background-color: orange;
+                padding: 4px 6px 8px 10px;      /* Viết gọn lại*/
+            }
+
+/* ---------------------------------------------------------------- */
+            .box3{
+                background-color: firebrick;
+                padding: 10px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: #333;
+            }
+            .box4{
+                background-color: green;
+                padding: 10px;
+                border-top-width: 8px;       /*Cách chỉnh width chi tiết*/
+                border-right-width: 6px;
+                border-bottom-width: 10px;
+                border-left-width: 12px;
+                border-style: solid;
+                border-color: yellowgreen
+            }
+ /* Cách viết gọn lại */
+            .box5{
+                background-color: blue;
+                padding: 10px;
+                border: 10px solid #444    /*Hoặc dùng border-top: */
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+    </body>
+</html>
